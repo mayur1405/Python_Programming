@@ -26,3 +26,9 @@
 #         X, Y and D are integers within the range [1..1,000,000,000];
 #         X ≤ Y.
 #####################################################
+import math
+def frogJmp(X,Y,D):
+    steps = (Y-X)/D
+    return (math.ceil(steps))
+
+frogJmp(10,85,30)
